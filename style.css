@@ -1,0 +1,7 @@
+/* Exemplo de Css externo */
+/*Regra em Css*/
+@charset "UTF-8";
+
+h1 {
+    color: aqua;
+}

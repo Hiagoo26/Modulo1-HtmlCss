@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Add icon-->
+    <link rel="shortcut icon" href="assets/Icons/barbabranca.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!--Link Css, precisa ficar na head tambem!-->
+    <title>OiOlá</title>
+    <!--Bom existem 3 formas de colocar um estilo um deles é o Inline como na linha 56
+        Tem como fazer o estilo com o style que fica na head assim como no d009
+        E tem como linkar na head com um link para um arquivo css-->
+    <style> /* Css Interno (OBS: Tem q ficar na head)*/
+        body {
+            color: antiquewhite;
+            background-color: #28232b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>"Primeiro", so que não pois ja fiz alguns kskskssk <span>oi</span></p>
+    <p>Era so um hr naquele meu projeto...</p>
+    <hr> <!--Linha-->
+    <!--Paragrafos-->
+    <p>Olá <br><em>Tudo bem?</em></p>
+    <!--Br quebra linha, em para dar ênfase,-->
+    <!--&lt; = <, &gt; = > -->
+    <p> &lt;p&gt;</p>
+    <hr>
+    <!--Simbolos e Emojis-->
+    <p>Simbolooosss &reg; <br> &copy; <br>&trade; <br>&euro;
+    <br>&real; <br>&Delta; <br>&uArr;</p>
+    <p>EMOJIS!!!! &#x1F601; <br>&#x1F497;
+    <br>&#x1F497; <br>&#x1F431;</p>
+    <hr>
+    <!--Colocar Imagens-->
+    <p>Imagem</p>
+    <img src="assets/Images/ace.jpg" alt="ACE"> <!--IMPORTANTE sempre procurar imagens/audios/videos e qualquer tipo de midia que possam ser usadas livremente, principalmente se for fazer um site profissonal!!!-->
+    <img src="assets/Images/onepiece.jpg" alt="onepiece"> <!--Tambem é imporante tomar cuidado com o tamanho dos arquivos, eles tem impacto direto no carregamento da sua página!, então sempre que possivel diminuir o tamanho dos arquivos, imagens = fotos,gimp,photoshop; videos = HandBrake-->
+    <img src="https://camo.githubusercontent.com/42fde469855caf3014ea46b2fec76893c8bce424120a01045f227f618c083c9e/68747470733a2f2f696d672e69636f6e73382e636f6d2f3f73697a653d3130302669643d31303837383426666f726d61743d706e6726636f6c6f723d303030303030" alt="JS"> <!--URL-->
+    <hr>
+    <!--Hierarquia de Títulos-->
+    <h1>One Piece Arcos</h1>
+    <h2>Saga East Blue</h2>
+    <h3>Arco de Romance Dawn</h3>
+    <h3>Arco de Orange Town</h3>
+    <h3>Arco da Vila Syrup</h3>
+    <h3>Arco do Baratie</h3>
+    <h3>Arco do Arlong Park</h3>
+    <h4>Tem a historia da Nami</h4>
+    <!--Lorem pra testar-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et enim esse, nam, provident deserunt doloremque vitae consectetur quas eum labore repellat minima possimus distinctio iusto aspernatur corporis molestiae vero.</p>
+    <!--Daqui a pouco da pra colocar numa lista-->
+    <hr>
+    <!--Semântica IMPORTANTE-->
+    <!--HTML se foca agr em semântica, tags com significado, estilo so no css!-->
+    <!--Negrito, Itálico-->
+    <h2>Negrito</h2>
+    <p>O STRONG deixa em <strong>negrito!</strong></p> <!--O <b> deixa em negrito mas não é semantica-->
+    <h2>Itálico</h2>
+    <p>O EM deixa em <em>itálico!</em></p> <!--O <i> deixa em italico mas não é semantica-->
+    <!--Formatações adicionais-->
+    <h2>Texto Marcado</h2>
+    <p>O MARK <mark style="background-color: rgb(165, 29, 165);">marca o texto</mark></p> <!-- Exemplo de style Inline-->
+    <h2>Texto grande e pequeno</h2>
+    <p>O texto pode ser <small>pequeno</small> com SMALL ou pode ser grande com &lt;big&gt; mas parece que o big não é mais utilizado</p>
+    <h2>Texto deletado</h2>
+    <p>Pode ser lido mais não <del>considerado</del> com DEL</p>
+    <h2>Texto inserido</h2>
+    <p>O texto tambem pode ser <ins>inserido/sublinado</ins> com INS</p> <!--<U> talvez já não se use mais porque é não semântica-->
+    <h2>Sobrescrito</h2>
+    <p>Tipo uma formula matematica 2<sup>20</sup>+ 3</p> <!--Sup ele fica um pouco mais para cima-->
+    <h2>Texto subescrito</h2>
+    <p>Tipo uma formula quimica H<sub>2</sub>0</p> <!--Sub ele fica um pouco mais para baixo-->
+    <!--Citações e Códigos-->
+    <h2>Código-fonte</h2>
+    <p>O comando CODE <code>document.getElementById()</code> ajuda a ler códigos</p> <!--Deixa a fonte monoespaçada permitindo melhor leitura de códigos!-->
+    <p>Vou colocar a tag &lt;pre&gt; para que todos os espaços e quebras de linha que eu fizer no codigo funcionem na pagina</p>
+    <pre>
+        <code>
+            num = int(input('Digite um numero: '))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+        </code>
+    </pre> <!--Como já dito deixa todos os espaços e quebras de linha, se fosse SO a tag code não ficaria bonitinho como está na pagina!-->
+    <p>Viu como fica bonito, so que se eu tirar os espaços ele fica igual a esse <ins>paragrafo</ins></p>
+    <h2>Citações simples</h2>
+    <p>Uma frase do Barba Branca: <q>O ONE PIECE... É REAL!!!</q></p> <!--A tag <q> adiciona as ""-->
+    <p>Ou em Japones <q>ワンピースは…実在する!!!</q></p>
+    <h2>Citações completas</h2>
+    <p>Uma frase muito iconica do Barba Negra é</p>
+    <blockquote cite="https://aminoapps.com/c/onepiecebr-opbr/page/blog/barba-negra-os-d-e-a-determinacao-herdada/5YRk_8MCVue3JEGNMZopwwa5K4JQ68MRo6">O sonho de um homem! Nunca tem fim!</blockquote>  <!-- A tag <blockquote> serve para destacar uma citação e pode incluir a fonte original através do atributo 'cite'. Ela também aplica uma identação para diferenciar o texto do restante do conteúdo.-->
+    <h2>Abreviações</h2>
+    <p>Estou assitindo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p> <!-- Quando você usa a tag <abbr> com o atributo title, ao passar o mouse sobre a palavra, aparece um texto explicando o que ela significa-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">É sacanade seu bobão</bdo></p> <!--So pra inverter se colocar ltr fica normal mas rtl fica invertido, left to right, right to left-->
+    <hr>
+    <!--Listas OL e UL-->
+    <h2>Lista ordenada ou &lt;OL&gt;</h2>
+    <p>Saga de Alabasta</p>
+    <ol type="1"> <!--Pode deixar so <ol> que aparecera os numeros em orderm ou pode colocar o parametro 'type="1, A, a, i, I"pode escolher qual usar' alem disso colocando 'start' na frente você pode definir aonde começar a lista ex= 26 -->
+        <li>Arco da Reverse Moutain</li> <!--LI = list item-->
+        <li>Arco de Whiskey Peak</li> <!--Se você fizer o comando ul(ou ol)>li*5 criara a ul(ol) junto com 5 li-->
+        <li>Arco de Coby e Helmeppo</li>
+        <li>Arco de Little Garden</li>
+        <li>Arco da Ilha de Drum</li>
+        <li>Arco de Alabasta</li>
+        <li>Arco pós-Alabasta <!--Da pra deixar sem </li> -->
+    </ol>
+    <h2>Listas não ordenadas &lt;UL&gt;</h2>
+    <p>Mugiwaras</p>
+    <ul type="disk"> <!--Pode deixar so <ul> ou pode colocar o 'type="disk, circle, square" Disk= bolinha escura, circle= circulo, square= quadrado'-->
+        <li>Luffy</li>
+        <li>Zoro</li>
+        <li>Nami</li>
+        <li>Franky</li>
+        <li>Jimbe</li>
+        <li>Brook</li>
+        <li>Ussop</li>
+        <li>Sanji</li>
+        <li>Robin</li>
+        <li>Chopper</li>
+    </ul>
+    <!--Listas mistas e de definição-->
+    <h2>Listas mistas</h2>
+    <p>Personagens de One Piece</p>
+    <ol>
+        <li>Gosto</li>
+        <ul type="square">
+            <li>Luffy</li>
+            <li>Sanji</li>
+            <li>Zoro</li>
+            <li>Law</li>
+        </ul>
+        <li>Não Gosto</li>
+        <ul type="square">
+            <li>Barba Negra (Marshall D Teach)</li>
+            <li>Akainu</li>
+            <li>Imu</li>
+        </ul>
+    </ol>
+    <h2>Lista de definição &lt;DL&gt;</h2>
+    <dl>
+        <dt>One piece</dt> <!--Dt = Termo-->
+        <dd>Anime de Pirata</dd> <!--Dd = descrição-->
+        <dt>Naruto</dt>
+        <dd>Anime de Ninja</dd>
+        <dt>Demon Slayer</dt>
+        <dd>Anime de matar demonio &#x1F480</dd>
+    </dl>
+    <hr>
+    <!--Links e Âncoras-->
+    <h2>Links Externos</h2>
+    <p>Assita One Piece!!! <a href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece" target="_blank" rel="external">AQUI</a></p> <!--Se a pagina que você estiver linkando tiver a lingua inglesa coloca hreflang="lingua do site"-->
+    <!--O <a> é uma âncora usada para criar links.
+    - href: define o endereço para onde o link vai (nesse caso, a página de One Piece na Crunchyroll).
+    - target="_blank": faz o link abrir em uma nova aba do navegador em uma janela em branco, fazendo com que não sobreponha o seu site.
+    - rel="external": indica que o link leva para um site externo, fora da sua aplicação.
+    -->
+    <img src="assets/Images/onepiece.jpg" alt="ONEPIECE!">
+    <!--Links Internos-->
+    <h2>Links Internos</h2>
+    <p>Olha a musica que eu fiz para linkar <a href="pages/interno.html" rel="next">AQUI</a></p> <!--Eu poderia colocar a pasta numa pasta tambem so mudaria o href ali, poderia colocar o target e o rel mas não precisa-->
+    <!-- 
+    rel="next" é usado em um link <a> para indicar que ele leva para a próxima página em uma sequência.
+    Muito útil em paginações (ex: página 1 → página 2) ou navegação em capítulos, artigos, etc.
+    -->
+    <p>E tem uma pasta da aula sabia? <a href="pages/aula.html" rel="_self">AQUI</a></p> <!--Com o self o link ira abrir na mesma aba-->
+    <!--Vi que tem o rel="author" que indica que o link leva para a página do autor do conteúdo.
+    Pode ser usado para apontar um perfil, portfólio ou biografia do criador.-->
+    <h2>Links para Dowload</h2>
+    <p>Olha essa imagem aqui rei</p>
+    <ul>
+        <li><a href="components/Extras/moto.png" download="moto.png" type="image/png">MotoHAHAHA</a></li> <!--Bom se so deixar o href ele vai abrir o arquivo sobrescrevendo sua pagina, mas se colocar o parametro download que força o navegador a baixar(pelo menos no OperaGX funcinou)
+        o type="image/png": tipo MIME do arquivo (boa prática, mas não obrigatório). -->
+        <!--MIME: MIME vem de "Multipurpose Internet Mail Extensions", mas hoje em dia ele é usado em vários contextos da web pra indicar o tipo de conteúdo de um arquivo.
+        É basicamente o "rótulo" que diz pro navegador o que tá vindo: se é imagem, texto, áudio, PDF, etc.-->
+    </ul>
+    <p>Olha se você quiser baixar um arquivo de Python que mostre como fazer um par ou impar, ta ai <a href="components/Scripts/teste.py" download="teste.py" type="text/x-python">DOWNLOAD</a></p> <!--Teste para ver se vai baixar o arquivo python-->
+    <hr>
+    <!--Provalmente não vai ter nada mas eu coloque a lista de desafios aqui-->
+    <!--1 Paragrafos e quebra de linhas
+        2 Imagem e Icon
+        3 Mapa Mundi
+        4 Emojis e Lista
+        5 Curriculo
+        6 Abreviaçoes-->
+    <!--Imagens Dinâmicas-->
+    <h2>Imagem Dinamica</h2>
+    <p>Imagem dinamica em dispositivos diferentes</p>
+    <picture>
+        <source media="(min-width: 1050px )" srcset="assets/Images/acenotebookPC.jpg" type="image/jpeg"> <!--o width é a largura, min é o minimo e max é o maximo-->
+        <source media="(min-width: 750px )" srcset="assets/Images/aceTablet.jpg" type="image/jpeg"> 
+        <img src="assets/Images/aceCelular.jpg" alt="ace"> <!--Da pra eu fazer da menor pra maior tambem so que ali no source media coloca min invez de max ou pode deixar max mesmo-->
+    </picture>
+     <!-- A tag <picture> permite carregar diferentes imagens conforme o tamanho da tela.
+        Cada <source> define uma imagem específica para um limite de largura (media query).
+        O navegador escolhe a primeira que se encaixa no tamanho atual da tela.
+        O <img> final é a imagem padrão, usada caso nenhuma media query seja satisfeita. -->
+    <hr>
+    <!--Add Áudio-->
+    <h2>Vamo colocar audio</h2>
+    <p>Vamo lá uma musica pra não relaxar</p>
+    <audio src="components/Audio/The Grime - Jeremy Korpas.mp3" controls></audio> <!-- A tag <audio> incorpora um áudio na página.
+    - src: caminho do arquivo de áudio.
+    - controls: exibe os controles de reprodução (play, pause, volume, etc.).
+    - autoplay: faz o áudio começar automaticamente (pode ser bloqueado por alguns navegadores), no OperaGX foi mas como eu to com a extensão do Live Server eu tirei, toda vez que eu mudava algo começava a tocar🤡.
+    - o arquivo de audio pode ser MP3, OGG, WAV.
+    -->
+    <!--Outro jeito de fazer-->
+    <audio preload="none" controls> <!--O atributo "preload" indica ao navegador como deve lidar com o carregamento do áudio:
+    - "auto": o navegador decide se carrega o áudio inteiro automaticamente (economia de dados pode ser ignorada).
+    - "metadata": carrega apenas informações básicas (duração, tipo, etc.), sem baixar o conteúdo do áudio.
+    - "none": não carrega nada até o usuário interagir com o player. Ideal pra economizar banda.-->
+        <source src="components/Audio/The Grime - Jeremy Korpas.mp3" type="audio/mpeg"> <!--Como já dito pode colocar inves de MP3, pode ser OGG ou WAV-->
+        <p>Se não funcionar o arquivo mp3, nem ogg ou wav essa mensagem ira aparecer</p>
+    </audio> <!--Tem o loop tambem mas é so pra deixar a musica em Loop obviamente KKKK-->
+    <!--Formatos de vídeo
+    Basicamente os formatos dos videos são MP4, WebM ou Ogv e com HandBrake você pode diminuir o tamanho do arquivo-->
+    <!--Vídeos em hospedagem própria-->
+    <h2>Vamos colocar um video agora</h2>
+    <video src="components/Video/xbox.mp4" width="500px" controls></video> <!--Width = Largura, linha 199 fala sobre os controls-->
+    <!--Bom mp4 funciona para basicamente todo tipo de Navegador, mas para evitar que não abra podemos baixar os outros formatos, por isso tem outra forma de fazer-->
+    <!--A outra forma-->
+    <video controls width="500px" preload="metadata" poster="/assets/Images/onepiece.jpg"> <!--O preload funciona para a tag video tambem, além disso posso adicionar um thumb para o video com o poster--> 
+        <source src="components/Video/xbox.webm" type="video/webm">
+        <source src="components/Video/xbox.mp4" type="video/mp4">
+        <p>Se isso aparecer o navegador que estou não tem compatibilidade com reprodução de vídeos!</p>
+    </video> <!--Hospedando o video no site pode sair muito caro! Pois vão consumir muito trafico de dados!-->
+    <!--Incorporando vídeos externos-->
+    <h2>Video incorporado</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xTxA1skdZsY?si=BCB-KRD2PMPLBcDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--<iframe>: Elemento HTML usado para incorporar outro conteúdo dentro da sua página (neste caso, um vídeo do YouTube).
+    width="560" height="315": Define a largura e a altura do player de vídeo incorporado. Você pode ajustar isso como quiser, inclusive com width="100%" pra responsivo.
+    src="https://www.youtube.com/embed/xTxA1skdZsY?si=...": URL do vídeo que será incorporado. Essa versão embed é específica pra ser usada dentro de iframes (diferente do link padrão do vídeo no YouTube).
+    title="YouTube video player": Acessibilidade — descreve o que é o iframe para leitores de tela.
+    frameborder="0": Remove a borda ao redor do iframe (mais usado em versões antigas do HTML, hoje em dia o estilo é geralmente controlado por CSS).
+    allow="...": Define o que o iframe pode fazer:
+    accelerometer: permite uso de sensores de movimento.
+    autoplay: permite que o vídeo comece automaticamente (se permitido).
+    clipboard-write: permite copiar conteúdo do iframe.
+    encrypted-media: permite reprodução de mídia protegida.
+    gyroscope: permite uso do giroscópio (movimentos do dispositivo).
+    picture-in-picture: permite o modo PiP (vídeo flutuante).
+    web-share: permite uso da API de compartilhamento nativa.
+    referrerpolicy="strict-origin-when-cross-origin": Política de privacidade que limita as informações do site de origem enviadas ao YouTube. É uma medida de segurança.
+    allowfullscreen: Permite que o vídeo seja assistido em tela cheia.
+    posso copiar a incorporação do youtube que vem com um start q inicia no segundo que você colocar
+    Tem o Vimeo tambem melhor qualidade mas pode exigir uma melhor internet-->
+    
+
+
+    
+</body>
+</html>
+<!--SOBRE o parametro target da linha 147
+Alem do "_blank" que abre o link em uma nova aba
+Tem o "_self" que é padrão que abre o link na mesma aba
+O "_parent" que abre o link no frame/página pai (se estiver usando iframe) mas não é tão utilizado mais
+O "_top" Cancela qualquer iframe e abre no topo da janela do navegador. Também usado em páginas com frames.-->
+
+<!--Uma dica de segurança tambem!
+Quando for usar a target="_blank" adicionar o rel="noopener noreferrer" para proteger contra tabnabbing(É tipo o phishing)
+o noopener bloqueia acesso ao window.opener(para proteger sua pagina) e o noreferrer oculta o referenciador da sua página-->
