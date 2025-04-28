@@ -1,6 +1,4 @@
-# HTML e CSS
-
-Projeto de prática dos fundamentos de HTML com um pouco de CSS. 
+# Projeto de prática dos fundamentos de HTML com um pouco de CSS
 
 ## 🚀 Funcionalidades
 
@@ -14,7 +12,8 @@ Projeto de prática dos fundamentos de HTML com um pouco de CSS.
 
 ## 📂 Como abrir o projeto
 
-Clone o repositório e abra o arquivo `index.html` em seu navegador.
+1. Clone o repositório.
+2. Abra o arquivo `index.html` em seu navegador.
 
 ## 📈 Status do projeto: 
 ✅ Finalizado
